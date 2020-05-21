@@ -42,6 +42,22 @@ class NumberCalculatorProcessorTest extends TestCase
         $this->assertEquals("((((10*12)+9)+4)*2)", $results[0]);
         $this->assertEquals("((((10*12)+4)+9)*2)", $results[1]);
         $this->assertEquals("((((12*10)+9)+4)*2)", $results[2]);
-        $this->assertEquals("((((12*10)+4)+9)*2)", $results[2]);
+        $this->assertEquals("((((12*10)+9)+4)*2)", $results[2]);
+    }
+
+    public function testOtherSolvableInput6Input()
+    {
+        $results = $this->numberCalculatorProcessor->findEquations(266, [2, 10, 9, 4, 12, 9]);
+
+        $this->assertCount(8, $results);
+
+        $this->assertEquals("((((10*12)+9)+4)*2)", $results[0]);
+        $this->assertEquals("((((10*12)+4)+9)*2)", $results[1]);
+        $this->assertEquals("((((10*12)+4)+9)*2)", $results[2]);
+        $this->assertEquals("((((10*12)+9)+4)*2)", $results[3]);
+        $this->assertEquals("((((12*10)+9)+4)*2)", $results[4]);
+        $this->assertEquals("((((12*10)+4)+9)*2)", $results[5]);
+        $this->assertEquals("((((12*10)+4)+9)*2)", $results[6]);
+        $this->assertEquals("((((12*10)+9)+4)*2)", $results[7]);
     }
 }
