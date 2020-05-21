@@ -12,12 +12,12 @@ class NumberController extends Controller
         $data = $request->validate(
             [
                 'target' => 'required|integer',
-                'input_csv' => 'file'
+                'file' => 'file'
             ]
         );
 
         $target = (int)$data['target'];
-        $numbers = $this->getNumbersFromCsv($data['input_csv']);
+        $numbers = $this->getNumbersFromCsv($data['file']);
 
         $results = $numberCalculatorProcessor->findEquations($target, $numbers);
 
