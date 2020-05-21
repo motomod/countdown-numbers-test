@@ -12,5 +12,11 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('numbers');
 });
+
+Route::get('/find-equation', function () {
+    return view('numbers');
+});
+
+Route::post('/find-equation', 'NumberController@findEquation');
