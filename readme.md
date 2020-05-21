@@ -38,6 +38,7 @@ Run `docker-compose exec php vendor/bin/phpunit`
 ### Number generator
 - I don't believe there's a mathematical formula for solving this problem, or at least not one I understand, so brute force was the only way I felt it was achievable.
 - I decided to track my progress for each step in the $attempts array, as this was easier for me to debug, but it would have been less memory consuming to find another way.
+- As a result of the above I increased the memory to 256mb to cater for 6 number inputs.
 - I decided to return all possible answers to the problem, as I might use this in a family quiz at the weekend and I'll need to know all the right answers.
 - I considered returning closest match solutions, but decided against this as it was out of scope of the specification, although I think it wouldn't be much work to achieve.
 
