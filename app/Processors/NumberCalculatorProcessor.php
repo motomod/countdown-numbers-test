@@ -8,7 +8,6 @@ use App\Model\Equation\Operation;
 class NumberCalculatorProcessor
 {
     protected array $operators = ['+', '-', '/', '*'];
-    protected int $attemptCounter = 0;
 
     public function findEquations(int $target, array $numbers): array
     {
@@ -53,8 +52,6 @@ class NumberCalculatorProcessor
 
     protected function calculateAttempt(int $target, array $attempt)
     {
-        $this->attemptCounter++;
-
         $startingBrackets = floor((count($attempt) / 2));
         $equation = str_repeat('(', $startingBrackets);
 
