@@ -21,6 +21,7 @@ services:
         - ./:/var/www
       links:
         - db
+      working_dir: /var/www
 
     db:
       image: mysql:5.7
