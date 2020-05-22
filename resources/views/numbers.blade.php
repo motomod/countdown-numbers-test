@@ -11,6 +11,13 @@
 
         <!-- Bootstrap -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+        <style>
+            section.form {
+                width: 40%;
+                margin: 30px auto 0;
+            }
+        </style>
     </head>
 
     <body>
@@ -24,7 +31,7 @@
             </div>
         </header>
         <main role="main">
-            <section class="">
+            <section class="form">
                 <form id="numbers" action="/find-equation" method="POST" enctype="multipart/form-data">
                     @csrf
                     <div class="form-group">
