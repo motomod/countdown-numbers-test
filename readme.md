@@ -26,9 +26,14 @@ Spec:
 Based on the above specification I surmised that the task was essentially to solve the number's round of the TV show Countdown.
 This is a simple application that uses brute force to find the correct solutions by trying every combination of numbers and operations.
 
+## Requirements
+PHP 7.4 with xml extension to install composer packages
+
 ## Running
 
-Run `docker-compose up` then visit `http://local.docker:8199`
+- Run `composer install`
+- Run `docker-compose up` then visit `http://local.docker:8199`
+- Run `chmod 777 storage/logs storage/framework -R`
 
 ## Tests
 
