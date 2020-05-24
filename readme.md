@@ -35,7 +35,7 @@ PHP 7.4 with xml extension to install composer packages
 
 ## Tests
 
-Run `docker-compose exec php vendor/bin/phpunit`
+Run `make tests`
 
 ## Considerations
 ### Number generator
