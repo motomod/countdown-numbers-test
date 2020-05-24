@@ -27,7 +27,7 @@ Based on the above specification I surmised that the task was essentially to sol
 This is a simple application that uses brute force to find the correct solutions by trying every combination of numbers and operations.
 
 ## Requirements
-PHP 7.4 with xml extension to install composer packages
+Docker service and docker-compose package
 
 ## Running
 
