@@ -31,9 +31,7 @@ PHP 7.4 with xml extension to install composer packages
 
 ## Running
 
-- Run `composer install`
-- Run `docker-compose up` then visit `http://local.docker:8199`
-- Run `chmod 777 storage/logs storage/framework -R`
+- Run `make` then visit `http://local.docker:8199`
 
 ## Tests
 
